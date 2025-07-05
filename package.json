@@ -10,13 +10,17 @@
 		"prepare": "svelte-kit sync || echo ''"
 	},
 	"devDependencies": {
+		"@iconify/svelte": "^5.0.0",
 		"@internationalized/date": "^3.8.2",
 		"@lucide/svelte": "^0.515.0",
 		"@sveltejs/adapter-auto": "^6.0.0",
+		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@tailwindcss/vite": "^4.0.0",
 		"bits-ui": "^2.8.10",
+		"flowbite": "^3.1.2",
+		"flowbite-svelte": "^1.8.3",
 		"svelte": "^5.0.0",
 		"tailwind-variants": "^1.0.0",
 		"tailwindcss": "^4.0.0",
