@@ -41,7 +41,7 @@
         <div transition:fade={{ delay: 900, duration: 600 }}>
           <footer class="mt-10 pb-12 text-sm text-[#B0B0B0]">
             Built using <span class="font-semibold text-[#005B41]">SvelteKit</span> and <span class="font-semibold text-[#005B41]">Tailwind</span>,  
-            deployed with <span class="font-semibold text-[#005B41]">GitHub Pages</span> by yours truly.
+            deployed with <span class="font-semibold text-[#005B41]">Vercel</span> by yours truly.
           </footer>
         </div>
       </div>
