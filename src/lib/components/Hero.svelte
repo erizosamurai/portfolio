@@ -40,14 +40,14 @@
     </div>
 
       <p class="mt-6 text-[16px] text-white leading-relaxed">
-        part curious researcher and a full-time overthinker. I spend most of my time learning about intriguing problems and reading related materials. I enjoy tackling machine learning problems and often find myself arguing with my code. I believe that the best ideas emerge from a mix of chaos and sleepless nights spent spiraling into overengineering simple problems. Currently, I am learning CUDA programming, Haskell, Rust, and Go. I am also building <a href="https://github.com/cogatimus">Cogatimus</a>, an open-source organization focused on creating a collection of useful and fascinating open-source tools.
+        part curious researcher and a full-time overthinker. I spend most of my time learning about intriguing problems and reading related materials. I enjoy tackling machine learning problems and often find myself arguing with my code. I believe that the best ideas emerge from a mix of chaos and sleepless nights spent spiraling into overengineering simple problems. Currently, I am learning CUDA programming, Haskell, Rust, Go and building <a href="https://github.com/cogatimus">Cogatimus</a>, an open-source organization focused on creating a collection of useful and fascinating open-source tools.
       </p>
     </div>
 
     <!-- Techstack Section -->
     <div class="mt-1 flex flex-col items-start">
       <div class="text-[32px] font-bold text-white">My Arsenal</div>
-      <div class="mt-2 flex flex-wrap gap-3">
+      <div class="mt-4 flex flex-wrap gap-3">
         {#each icons as tech}
           <div
             class="w-9 h-9 border-dashed border-[#005B41] border-[1.5px] rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-200"
@@ -63,7 +63,7 @@
     <div class="mt-1">
       <div class="text-[32px] font-bold text-white">Experience</div>
 
-      <div class="mt-2 border-[1.5px] border-dashed border-[#008170] rounded-xl p-6 text-white">
+      <div class="mt-5 border-[1.5px] border-dashed border-[#005B41] rounded-xl p-6 text-white">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-2">
           <div class="text-[16px] font-bold">
             Indian National Center for Ocean Information Services<br />
