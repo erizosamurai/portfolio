@@ -40,7 +40,7 @@
     </div>
 
       <p class="mt-6 text-[16px] text-white leading-relaxed">
-        part curious researcher and a full-time overthinker. I spend most of my time learning about intriguing problems and reading related materials. I enjoy tackling machine learning problems and often find myself arguing with my code. I believe that the best ideas emerge from a mix of chaos and sleepless nights spent spiraling into overengineering simple problems. Currently, I am learning CUDA programming, Haskell, Rust, Go and building <a href="https://github.com/cogatimus">Cogatimus</a>, an open-source organization focused on creating a collection of useful and fascinating open-source tools.
+        Part Time researcher and a full-time overthinker. I spend most of my time learning about intriguing problems and reading related materials. I enjoy tackling machine learning problems and often find myself arguing with my code. I believe that the best ideas emerge from a mix of chaos and sleepless nights spent spiraling into overengineering simple problems. Currently, I am learning CUDA programming, Haskell, Rust, Go and building <a href="https://github.com/cogatimus">Cogatimus</a>, an open-source organization focused on creating a collection of useful and fascinating open-source tools.
       </p>
     </div>
 
