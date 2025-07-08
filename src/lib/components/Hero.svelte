@@ -24,7 +24,7 @@
 </script>
 
 <!-- Hero Section -->
-<div class="flex flex-col md:flex-row items-start justify-center min-h-screen pt-20 px-6 lg:px-24 gap-12">
+<div class="flex flex-col md:flex-row items-start justify-center min-h-screen pt-14 px-6 lg:px-24 gap-12">
   <!-- Avatar -->
   <div class="flex-shrink-0">
     <img src={avatarSrc} alt="{alias} Samurai" class="w-40 h-40 rounded-full object-cover" />

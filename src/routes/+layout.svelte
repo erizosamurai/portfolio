@@ -5,14 +5,19 @@
   let { children } = $props();
 </script>
 
-<!-- Proper flex column layout to control scroll and footer alignment -->
-<div class="relative min-h-screen flex flex-col overflow-hidden">
+<!-- Full-page layout -->
+<div class="relative min-h-screen flex bg-[#0F0F0F] text-white font-[Poppins]">
+  <!-- Sidebar -->
+  <Sidebar />
 
-  <!-- Background visual -->
-  <Sparkles className="pointer-events-none z-0 absolute inset-0" />
+  <!-- Main content area -->
+  <div class="flex-1 relative flex flex-col overflow-x-hidden mx-auto max-w-7xl px-6">
+    <!-- Background Sparkles -->
+    <Sparkles className="pointer-events-none z-0 absolute inset-0" />
 
-  <!-- Main page content -->
-  <div class="relative z-10 flex-grow">
-    {@render children()}
+    <!-- Page content -->
+    <main class="relative z-10 flex-grow px-6 py-10 md:px-12 lg:px-20">
+      {@render children()}
+    </main>
   </div>
 </div>

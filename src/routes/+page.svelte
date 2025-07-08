@@ -19,39 +19,37 @@
   <div class="min-h-screen flex flex-col">
 
     <!-- Hero -->
-    <div in:fly={{ y: -30, duration: 600, delay: 100, easing: quintOut }}>
+    <section id="Hero" class="scroll-mt-32" in:fly={{ y: -30, duration: 600, delay: 100, easing: quintOut }}>
       <Hero />
-    </div>
+    </section>
 
     <!-- Main content -->
-    <div class="flex-grow">
+    <div class="flex-grow min-h-screen">
       <div class="flex flex-col md:flex-row items-start justify-center px-6 lg:px-24 gap-12">
-        
+
         <div class="flex-shrink-0">
           <div class="w-40 h-0"></div>
         </div>
 
         <div class="w-full max-w-2xl flex flex-col gap-10">
 
-          <div in:fly={{ y: 20, duration: 600, delay: 300, easing: quintOut }}>
+          <section id="Projects" class="scroll-mt-32" in:fly={{ y: 20, duration: 600, delay: 300, easing: quintOut }}>
             <Projects />
-          </div>
+          </section>
 
-          <div in:fly={{ y: 20, duration: 600, delay: 500, easing: quintOut }}>
+          <section id="Research"  class="scroll-mt-32" in:fly={{ y: 20, duration: 600, delay: 500, easing: quintOut }}>
             <Research />
-          </div>
+          </section>
 
-          <div in:fly={{ y: 20, duration: 600, delay: 700, easing: quintOut }}>
+          <section id="Contact" class="scroll-mt-32 ">
             <Contact />
-          </div>
+          </section>
 
-          <div in:fly={{ y: 20, duration: 600, delay: 900, easing: quintOut }}>
-            <footer class="mt-10 pb-12 text-sm text-[#B0B0B0]">
-              Built using <span class="font-semibold text-[#005B41]">SvelteKit</span> and 
-              <span class="font-semibold text-[#005B41]">Tailwind</span>, deployed with 
-              <span class="font-semibold text-[#005B41]">Vercel</span> by yours truly.
-            </footer>
-          </div>
+          <footer class="mt-10 pb-12 text-[14px] text-[#B0B0B0]">
+            Built using <span class="font-semibold text-[#005B41]">SvelteKit</span> and
+            <span class="font-semibold text-[#005B41]">Tailwind</span>, deployed with
+            <span class="font-semibold text-[#005B41]">Vercel</span> by yours truly.
+          </footer>
 
         </div>
       </div>

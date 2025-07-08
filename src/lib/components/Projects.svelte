@@ -46,7 +46,7 @@
 	];
 </script>
 
-<div class="flex flex-col gap-7 mt-10">
+<div class="flex flex-col gap-7 mt-4">
 	<div class="text-[32px] font-bold text-white">Projects</div>
 
 	{#each projects as project}
@@ -55,7 +55,7 @@
     <div class="flex items-center gap-2 text-white font-semibold text-lg mb-2">
         {project.name}
         <a href={project.link} target="_blank" rel="noopener noreferrer">
-        <Icon icon="jam:github" width="24" height="24" class="text-[#005B41]" />
+        <Icon icon="jam:github" width="24" height="24" class="text-[#008170]" />
         </a>
     </div>
 
