@@ -34,8 +34,8 @@
   <div class="w-full max-w-2xl flex flex-col gap-10">
     <!-- Intro Text -->
     <div>
-     <div class="text-[32px] font-bold text-white">Hey There!</div>
-    <div class="mt-4 text-[32px] font-bold text-white">
+     <div class="text-[36px] font-bold text-white">Hey There!</div>
+    <div class="mt-4 text-[36px] font-bold text-white">
     I am <span class="text-[#008170]">{name}</span> aka <span class="text-[#008170]">{alias}</span>
     </div>
 
@@ -63,13 +63,13 @@
     <div class="mt-1">
       <div class="text-[32px] font-bold text-white">Experience</div>
 
-      <div class="mt-5 border-[1.5px] border-dashed border-[#005B41] rounded-xl p-6 text-white">
+      <div class="mt-4 border-[1.5px] border-dashed border-[#005B41] rounded-xl p-6 text-white">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-2">
           <div class="text-[16px] font-bold">
             Indian National Center for Ocean Information Services<br />
-            <span class="font-bold">(INCOIS)</span>
+            <!-- <span class="font-bold">(INCOIS)</span> -->
           </div>
-          <div class="italic text-sm md:text-base text-right text-gray-300">
+          <div class="italic text-[16px] md:text-base text-right text-gray-300">
             JUNE–AUGUST 2024
           </div>
         </div>

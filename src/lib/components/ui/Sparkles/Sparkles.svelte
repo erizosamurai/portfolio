@@ -19,7 +19,7 @@
 		size: getRandomValue(minSize, maxSize),
 		delay: Math.random() * 5,
 		duration: getRandomValue(2, 5),
-		opacity: getRandomValue(0.1, 0.7)
+		opacity: getRandomValue(0.6, 0.8)
 	}));
 </script>
 
