@@ -1,6 +1,10 @@
 <script>
 	import Icon from "@iconify/svelte";
+	import { fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
+	let visible = [];
+	let refs = [];
 	const projects = [
 		{
 			name: "Phishing URL-Detection (Capstone)",
@@ -44,32 +48,56 @@
 			]
 		}
 	];
+
+	// Initialize visibility tracking
+	onMount(() => {
+		visible = new Array(projects.length).fill(false);
+	refs.forEach((el, index) => {
+			if (!el) return;
+
+			const observer = new IntersectionObserver(([entry]) => {
+				if (entry.isIntersecting) {
+					visible[index] = true;
+					observer.unobserve(el);
+				}
+			}, { threshold: 0.1 });
+
+			observer.observe(el);
+		});
+	});
 </script>
 
-<div class="flex flex-col gap-7 mt-10">
-	<div class="text-[32px] font-bold text-white">Projects</div>
+<div class="w-full max-w-3xl flex flex-col gap-y-4 lg:mt-5">
+	<div class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-white">Projects</div>
 
-	{#each projects as project}
-    <div class="border-[1.5px] border-dashed border-[#005B41] rounded-xl p-6 text-white">
-    <!-- Title -->
-    <div class="flex items-center gap-2 text-white font-semibold text-lg mb-2">
-        {project.name}
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
-        <Icon icon="jam:github" width="24" height="24" class="text-[#005B41]" />
-        </a>
-    </div>
+	{#each projects as project, i}
+		<div bind:this={refs[i]}>
+			{#if visible[i]}
+				<div
+					in:fly={{ y: 50, duration: 1500 }}
+					class="w-full mt-4 border-[1.5px] border-dashed border-[#005B41] rounded-xl p-4 sm:p-6 text-white"
+				>
+					<!-- Title -->
+					<div class="flex items-center gap-2 text-white font-semibold text-lg mb-2">
+						{project.name}
+						<a href={project.link} target="_blank" rel="noopener noreferrer">
+							<Icon icon="jam:github" width="24" height="24" class="text-[#008170]" />
+						</a>
+					</div>
 
-    <!-- Tech Stack -->
-    <div class="flex gap-2 flex-wrap mb-2">
-        {#each project.techstack as tech}
-        <div class="w-[27px] h-[27px] border border-dashed border-[#005B41] rounded-md flex items-center justify-center">
-            <Icon icon={tech} width="22.37" height="22.37" />
-        </div>
-        {/each}
-    </div>
+					<!-- Tech Stack -->
+					<div class="flex gap-2 flex-wrap mb-2">
+						{#each project.techstack as tech}
+							<div class="w-[27px] h-[27px] border border-dashed border-[#005B41] rounded-md flex items-center justify-center">
+								<Icon icon={tech} width="22.37" height="22.37" />
+							</div>
+						{/each}
+					</div>
 
-    <!-- Description -->
-    <p class="text-sm text-white leading-relaxed">{project.content}</p>
-    </div>
+					<!-- Description -->
+					<p class="text-sm text-white leading-loose">{project.content}</p>
+				</div>
+			{/if}
+		</div>
 	{/each}
 </div>

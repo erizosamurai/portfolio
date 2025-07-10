@@ -1,7 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { fly } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
+  import { fade } from 'svelte/transition';
 
   import Contact from '$lib/components/Contact.svelte';
   import Hero from '$lib/components/Hero.svelte';
@@ -19,7 +18,7 @@
   <div class="min-h-screen flex flex-col">
 
     <!-- Hero -->
-    <div in:fly={{ y: -30, duration: 600, delay: 100, easing: quintOut }}>
+    <div in:fade={{ duration: 1500, delay: 100 }}>
       <Hero />
     </div>
 
@@ -31,21 +30,21 @@
           <div class="w-40 h-0"></div>
         </div>
 
-        <div class="w-full max-w-2xl flex flex-col gap-10">
+        <div class="w-full max-w-3xl flex flex-col gap-y-8">
 
-          <div in:fly={{ y: 20, duration: 600, delay: 300, easing: quintOut }}>
+          <div in:fade={{ duration: 600, delay: 300 }}>
             <Projects />
           </div>
 
-          <div in:fly={{ y: 20, duration: 600, delay: 500, easing: quintOut }}>
+          <div in:fade={{ duration: 600, delay: 500 }}>
             <Research />
           </div>
 
-          <div in:fly={{ y: 20, duration: 600, delay: 700, easing: quintOut }}>
+          <div in:fade={{ duration: 600, delay: 700 }}>
             <Contact />
           </div>
 
-          <div in:fly={{ y: 20, duration: 600, delay: 900, easing: quintOut }}>
+          <div in:fade={{ duration: 600, delay: 900 }}>
             <footer class="mt-10 pb-12 text-sm text-[#B0B0B0]">
               Built using <span class="font-semibold text-[#005B41]">SvelteKit</span> and 
               <span class="font-semibold text-[#005B41]">Tailwind</span>, deployed with 

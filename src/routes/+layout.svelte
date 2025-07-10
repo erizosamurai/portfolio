@@ -1,7 +1,6 @@
 <script>
   import '../app.css';
   import Sparkles from '$lib/components/ui/Sparkles/Sparkles.svelte';
-  import Sidebar from '$lib/components/Sidebar.svelte';
   let { children } = $props();
 </script>
 
