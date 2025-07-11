@@ -68,36 +68,37 @@
 </script>
 
 <div class="w-full max-w-3xl flex flex-col gap-y-4 lg:mt-5">
-	<div class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-white">Projects</div>
+	<div class="text-[24px] sm:text-[30px] lg:text-[32px] font-bold text-[#F5F7FA]">Projects</div>
 
 	{#each projects as project, i}
 		<div bind:this={refs[i]}>
 			{#if visible[i]}
 				<div
 					in:fly={{ y: 50, duration: 1500 }}
-					class="w-full mt-4 border-[1.5px] border-dashed border-[#005B41] rounded-xl p-4 sm:p-6 text-white"
+					class="w-full mt-4 border-[1.5px] border-dashed border-[#1E88E5] rounded-xl p-4 sm:p-6 text-[#F5F7FA]"
 				>
 					<!-- Title -->
-					<div class="flex items-center gap-2 text-white font-semibold text-lg mb-2">
+					<div class="flex items-center gap-2 text-[#F5F7FA] font-semibold text-[18px] mb-2">
 						{project.name}
 						<a href={project.link} target="_blank" rel="noopener noreferrer">
-							<Icon icon="jam:github" width="24" height="24" class="text-[#008170]" />
+							<Icon icon="jam:github" width="24" height="24" class="text-[#1E88E5]" />
 						</a>
 					</div>
 
 					<!-- Tech Stack -->
 					<div class="flex gap-2 flex-wrap mb-2">
 						{#each project.techstack as tech}
-							<div class="w-[27px] h-[27px] border border-dashed border-[#005B41] rounded-md flex items-center justify-center">
+							<div class="w-[27px] h-[27px] border border-dashed border-[#00CFFF] rounded-md flex items-center justify-center">
 								<Icon icon={tech} width="22.37" height="22.37" />
 							</div>
 						{/each}
 					</div>
 
 					<!-- Description -->
-					<p class="text-sm text-white leading-loose">{project.content}</p>
+					<p class="text-[16px] text-[#F5F7FA] leading-loose">{project.content}</p>
 				</div>
 			{/if}
 		</div>
 	{/each}
 </div>
+

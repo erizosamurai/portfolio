@@ -27,13 +27,13 @@
 {#if contactVisible}
   <div
     in:fly={{ y: 50, duration: 1500 }}
-    class="w-full flex flex-col items-start gap-8 pt-20 text-white"
+    class="w-full flex flex-col items-start gap-8 pt-20 text-[#F5F7FA]"
   >
     <div class="flex flex-col md:flex-row w-full justify-between gap-8">
       <!-- Text -->
       <div class="max-w-md">
-        <h2 class="text-2xl sm:text-3xl lg:text-[32px] font-bold mb-4">Let’s work together</h2>
-        <p class="text-[18px] leading-relaxed">
+        <h2 class="text-[24px] sm:text-[30px] lg:text-[32px] font-bold mb-4">Let’s work together</h2>
+        <p class="text-[16px] sm:text-[18px] leading-relaxed">
           I'm always looking for new opportunities and intriguing research projects.
           Feel free to contact me if you want to collaborate or just want to say hello.
         </p>
@@ -43,18 +43,18 @@
       <div class="flex flex-col gap-6 mt-16">
         <div class="flex gap-4">
           <a href="https://github.com/erizosamurai" target="_blank" rel="noopener noreferrer">
-            <Icon icon="jam:github" width="28" height="28" class="text-[#008170]" />
+            <Icon icon="jam:github" width="28" height="28" class="text-[#00CFFF]" />
           </a>
           <a href="https://x.com/ErizoSamurai" target="_blank" rel="noopener noreferrer">
-            <Icon icon="prime:twitter" width="28" height="28" class="text-[#008170]" />
+            <Icon icon="prime:twitter" width="28" height="28" class="text-[#00CFFF]" />
           </a>
           <a href="https://www.linkedin.com/in/adhitsimhadri/" target="_blank" rel="noopener noreferrer">
-            <Icon icon="uiw:linkedin" width="28" height="28" class="text-[#008170]" />
+            <Icon icon="uiw:linkedin" width="28" height="28" class="text-[#00CFFF]" />
           </a>
         </div>
 
-        <div class="flex items-center gap-3 border border-dashed border-[#005B41] px-3 py-1 rounded-md w-fit">
-          <Icon icon="mdi:email-outline" width="20" height="20" class="text-[#008170]" />
+        <div class="flex items-center gap-3 border border-dashed border-[#1E88E5] px-3 py-1 rounded-md w-fit">
+          <Icon icon="mdi:email-outline" width="20" height="20" class="text-[#00CFFF]" />
           <a href="mailto:adhit.simhadri@gmail.com" class="text-[16px]">
             adhit.simhadri@gmail.com
           </a>

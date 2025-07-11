@@ -41,49 +41,48 @@
 
     <!-- Intro Text -->
     <div in:fly={{ x: 50, delay: 100, duration: 1500 }}>
-      <div class="text-2xl sm:text-3xl lg:text-[36px] font-bold text-white">
-        Hi, <span class="text-[#008170]">{name}</span> aka <span class="text-[#008170]">{alias}</span> here
+      <div class="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#F5F7FA]">
+        Hi, <span class="text-[#00CFFF]">{name}</span> aka <span class="text-[#00CFFF]">{alias}</span> here
       </div>
-      <p class="mt-4 lg:mt-6 text-base sm:text-lg text-white leading-relaxed">
+      <p class="mt-4 lg:mt-6 text-[16px] sm:text-[18px] text-[#F5F7FA] leading-relaxed">
         I like reading research papers and building cool stuff.
       </p>
-      <p class="mt-4 lg:mt-6  text-base sm:text-lg text-white leading-relaxed">
+      <p class="mt-4 lg:mt-6 text-[16px] sm:text-[18px] text-[#F5F7FA] leading-relaxed">
         I'm mostly into Natural Language and Vision.
       </p>
-      <p class="mt-4 lg:mt-6  text-base sm:text-lg text-white leading-relaxed">
+      <p class="mt-4 lg:mt-6 text-[16px] sm:text-[18px] text-[#F5F7FA] leading-relaxed">
         I'm interested in photography, technology, deepscience, sports and gaming.
       </p>
     </div>
 
-    <!-- Techstack Section -->
     <div in:fly={{ y: 40, delay: 200, duration: 1500 }}>
-      <div class="text-2xl sm:text-3xl font-bold text-white mt-6">My Arsenal</div>
-      <div class="mt-4 lg:mt-6 flex flex-wrap gap-3">
-        {#each icons as tech (tech.name)}
-          <div
-            class="w-8 h-8 sm:w-9 sm:h-9 border-dashed border-[#005B41] border-[1.5px] rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-200"
-            title={tech.name}
-          >
-            <Icon icon={tech.icon} width="26" height="26" class="sm:w-[29px] sm:h-[29px]" />
-          </div>
-        {/each}
-      </div>
+    <div class="text-[24px] sm:text-[30px] font-bold text-[#F5F7FA] mt-6">My Arsenal</div>
+    <div class="mt-4 lg:mt-6 flex flex-wrap gap-3">
+      {#each icons as tech (tech.name)}
+        <div
+          class="w-8 h-8 sm:w-9 sm:h-9 border-dashed border-[#1E88E5] border-[1.5px] rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-200"
+          title={tech.name}
+        >
+          <Icon icon={tech.icon} width="26" height="26" class="sm:w-[29px] sm:h-[29px]" />
+        </div>
+      {/each}
     </div>
+  </div>
 
-    <!-- Experience Section -->
+<!-- Experience Section -->
     <div in:fly={{ y: 40, delay: 300, duration: 1500 }}>
-      <div class="text-2xl sm:text-3xl font-bold text-white mt-6 lg:mt-8 ">Experience</div>
+      <div class="text-[24px] sm:text-[30px] font-bold text-[#F5F7FA] mt-6 lg:mt-8">Experience</div>
 
-      <div class="mt-4 lg:mt-8 border-[1.5px] border-dashed border-[#005B41] rounded-xl p-4 sm:p-6 text-white">
+      <div class="mt-4 lg:mt-8 border-[1.5px] border-dashed border-[#1E88E5] rounded-xl p-4 sm:p-6 text-[#F5F7FA]">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4 mb-3">
-          <div class="text-base sm:text-lg font-bold">
+          <div class="text-[16px] sm:text-[18px] font-bold">
             Indian National Center for Ocean Information Services
           </div>
-          <div class="italic text-sm sm:text-base text-gray-300 text-right">
+          <div class="italic text-[14px] sm:text-[15px] text-gray-300 text-right">
             JUNE–AUGUST 2024
           </div>
         </div>
-        <p class="text-sm sm:text-[14px] leading-relaxed text-gray-200">
+        <p class="text-[14px] sm:text-[15px] leading-relaxed text-gray-200">
           Worked with geospatial data from the CYGNSS satellite and visualized the microplastics
           concentration in the Indian Ocean for the months of January–December 2023, and worked on
           building a predictive model for January 2024.

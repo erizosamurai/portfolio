@@ -35,14 +35,14 @@
 
 	<!-- Publications -->
 	{#if pubVisible}
-		<div in:fly={{ y: 50, duration: 1500 }} class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-white">
+		<div in:fly={{ y: 50, duration: 1500 }} class="text-[24px] sm:text-[30px] lg:text-[32px] font-bold text-[#F5F7FA]">
 			Publications
 		</div>
 		<div
 			in:fly={{ y: 50, duration: 1500 }}
-			class="mt-5 border-[1.5px] border-dashed border-[#005B41] rounded-xl p-6 text-white"
+			class="mt-5 border-[1.5px] border-dashed border-[#1E88E5] rounded-xl p-6 text-[#F5F7FA]"
 		>
-			<p class="text-sm sm:text-[14px] italic leading-relaxed text-gray-200">
+			<p class="text-[16px] sm:text-[17px] italic leading-relaxed text-gray-200">
 				Simhadri, Adhit, M. Rishikesh, and M. Subramaniam.
 				"13 Machine Learning in Phishing URL Detection: A Review of Recent Progress."
 				<i>Power Energy and Secure Smart Technologies</i> (2025).
@@ -55,17 +55,18 @@
 
 	<!-- Blogs -->
 	{#if blogVisible}
-		<div in:fly={{ y: 50, duration: 1500 }} class="mt-10 text-2xl sm:text-3xl lg:text-[32px] font-bold text-white">
+		<div in:fly={{ y: 50, duration: 1500 }} class="mt-10 text-[24px] sm:text-[30px] lg:text-[32px] font-bold text-[#F5F7FA]">
 			Blogs
 		</div>
 		<div
 			in:fly={{ y: 50, duration: 1500 }}
-			class="mt-4 border-[1.5px] border-dashed border-[#005B41] rounded-xl p-4 sm:p-6 text-white"
+			class="mt-4 border-[1.5px] border-dashed border-[#1E88E5] rounded-xl p-4 sm:p-6 text-[#F5F7FA]"
 		>
-			<p class="text-sm sm:text-[14px] text-center text-gray-300">Coming Soon</p>
+			<p class="text-[16px] sm:text-[17px] text-center text-gray-300">Coming Soon</p>
 		</div>
 	{/if}
 
 	<!-- Element to observe -->
 	<div bind:this={blogRef} style="height: 1px;"></div>
+
 
