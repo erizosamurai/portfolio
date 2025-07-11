@@ -31,8 +31,8 @@
 </script>
 
 <!-- Hero Section -->
- <div class="pt-10"></div>
-<div class="flex flex-col md:flex-row items-start justify-center min-h-screen pt-20 px-6 lg:pt-36 lg:px-24 gap-12">
+ <!-- <div class="md:pt-10"></div> -->
+<div class="flex flex-col md:flex-row items-start justify-center min-h-screen pt-20 px-6 lg:pt-15 lg:px-24 gap-12">
   <!-- Avatar -->
   <div class="flex-shrink-0" in:fly={{ x: -50, duration: 1000 }}>
     <img
@@ -64,15 +64,16 @@
     <div in:fly={{ y: 40, delay: 200, duration: 1500 }}>
     <div class="text-[24px] sm:text-[30px] font-bold text-[#F5F7FA] mt-6">My Arsenal</div>
     <div class="mt-4 lg:mt-6 flex flex-wrap gap-3">
-      {#each icons as tech (tech.name)}
-        <div
-          class="w-8 h-8 sm:w-9 sm:h-9 border-dashed border-[#1E88E5] border-[1.5px] rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-1"
-          title={tech.name}
-        >
-          <Icon icon={tech.icon} width="26" height="26" class="sm:w-[29px] sm:h-[29px]" />
-        </div>
-      {/each}
-    </div>
+    {#each icons as tech (tech.name)}
+      <div
+        class="flex items-center gap-2 px-3 py-2 border-dashed border-[#1E88E5] border-[1.5px] rounded-md hover:scale-105 transition-transform duration-200"
+        title={tech.name}
+      >
+        <Icon icon={tech.icon} width="24" height="24" class="sm:w-[26px] sm:h-[26px]" />
+        <span class="text-sm sm:text-base text-[#F5F7FA]">{tech.name}</span>
+      </div>
+    {/each}
+  </div>
   </div>
 
 <!-- Experience Section -->
