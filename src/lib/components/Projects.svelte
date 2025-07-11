@@ -88,7 +88,7 @@
 					<!-- Tech Stack -->
 					<div class="flex gap-2 flex-wrap mb-2">
 						{#each project.techstack as tech}
-							<div class="w-[27px] h-[27px] border border-dashed border-[#00CFFF] rounded-md flex items-center justify-center">
+							<div class="w-[27px] h-[27px] border border-dashed border-[#00CFFF] rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-1" >
 								<Icon icon={tech} width="22.37" height="22.37" />
 							</div>
 						{/each}

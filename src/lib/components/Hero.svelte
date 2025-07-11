@@ -22,6 +22,12 @@
     { name: "JavaScript", icon: "vscode-icons:file-type-js-official" },
     { name: "Svelte", icon: "devicon:svelte" }
   ];
+
+  let hoveredTech = null;
+
+  const toggleTech = (name) => {
+    hoveredTech = hoveredTech === name ? null : name;
+  };
 </script>
 
 <!-- Hero Section -->
@@ -54,13 +60,13 @@
         I'm interested in photography, technology, deepscience, sports and gaming.
       </p>
     </div>
-
+     <!-- Techstack -->
     <div in:fly={{ y: 40, delay: 200, duration: 1500 }}>
     <div class="text-[24px] sm:text-[30px] font-bold text-[#F5F7FA] mt-6">My Arsenal</div>
     <div class="mt-4 lg:mt-6 flex flex-wrap gap-3">
       {#each icons as tech (tech.name)}
         <div
-          class="w-8 h-8 sm:w-9 sm:h-9 border-dashed border-[#1E88E5] border-[1.5px] rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-200"
+          class="w-8 h-8 sm:w-9 sm:h-9 border-dashed border-[#1E88E5] border-[1.5px] rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-1"
           title={tech.name}
         >
           <Icon icon={tech.icon} width="26" height="26" class="sm:w-[29px] sm:h-[29px]" />
