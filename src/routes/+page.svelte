@@ -46,9 +46,9 @@
 
           <div in:fade={{ duration: 600, delay: 900 }}>
             <footer class="mt-10 pb-12 text-[16px] text-[#7C7F85]">
-              Built using <span class="font-semibold text-[16px] text-[#5BD3F3]">SvelteKit</span> and 
-              <span class="font-semibold text-[16px] text-[#5BD3F3]">Tailwind</span>, deployed with 
-              <span class="font-semibold text-[16px] text-[#5BD3F3]">Vercel</span> by yours truly.
+              Built using <span class="font-semibold text-[16px] text-[#4AB0F7]">SvelteKit</span> and 
+              <span class="font-semibold text-[16px] text-[#4AB0F7]">Tailwind</span>, deployed with 
+              <span class="font-semibold text-[16px] text-[#4AB0F7]">Vercel</span> by yours truly.
             </footer>
           </div>
 

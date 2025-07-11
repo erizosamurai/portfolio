@@ -48,7 +48,7 @@
     <!-- Intro Text -->
     <div in:fly={{ x: 50, delay: 100, duration: 1500 }}>
       <div class="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#F5F7FA]">
-        Hi, <span class="text-[#00CFFF]">{name}</span> aka <span class="text-[#00CFFF]">{alias}</span> here
+        Hi, <span class="text-[#4AB0F7]">{name}</span> aka <span class="text-[#4AB0F7]">{alias}</span> here
       </div>
       <p class="mt-4 lg:mt-6 text-[16px] sm:text-[18px] text-[#F5F7FA] leading-relaxed">
         I like reading research papers and building cool stuff.
@@ -85,11 +85,11 @@
           <div class="text-[16px] sm:text-[18px] font-bold">
             Indian National Center for Ocean Information Services
           </div>
-          <div class="italic text-[14px] sm:text-[15px] text-gray-300 text-right">
+          <div class="italic text-[16px] sm:text-[16px] text-[#F5F7FA] text-right">
             JUNE–AUGUST 2024
           </div>
         </div>
-        <p class="text-[14px] sm:text-[15px] leading-relaxed text-gray-200">
+        <p class="text-[16px] sm:text-[16px] leading-relaxed text-[#F5F7FA]">
           Worked with geospatial data from the CYGNSS satellite and visualized the microplastics
           concentration in the Indian Ocean for the months of January–December 2023, and worked on
           building a predictive model for January 2024.

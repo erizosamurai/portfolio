@@ -43,18 +43,18 @@
       <div class="flex flex-col gap-6 mt-16">
         <div class="flex gap-4">
           <a href="https://github.com/erizosamurai" target="_blank" rel="noopener noreferrer">
-            <Icon icon="jam:github" width="28" height="28" class="text-[#00CFFF]" />
+            <Icon icon="jam:github" width="28" height="28" class="text-[#4AB0F7]" />
           </a>
           <a href="https://x.com/ErizoSamurai" target="_blank" rel="noopener noreferrer">
-            <Icon icon="prime:twitter" width="28" height="28" class="text-[#00CFFF]" />
+            <Icon icon="prime:twitter" width="28" height="28" class="text-[#4AB0F7]" />
           </a>
           <a href="https://www.linkedin.com/in/adhitsimhadri/" target="_blank" rel="noopener noreferrer">
-            <Icon icon="uiw:linkedin" width="28" height="28" class="text-[#00CFFF]" />
+            <Icon icon="uiw:linkedin" width="28" height="28" class="text-[#4AB0F7]" />
           </a>
         </div>
 
         <div class="flex items-center gap-3 border border-dashed border-[#1E88E5] px-3 py-1 rounded-md w-fit">
-          <Icon icon="mdi:email-outline" width="20" height="20" class="text-[#00CFFF]" />
+          <Icon icon="mdi:email-outline" width="20" height="20" class="text-[#4AB0F7]" />
           <a href="mailto:adhit.simhadri@gmail.com" class="text-[16px]">
             adhit.simhadri@gmail.com
           </a>

@@ -81,7 +81,7 @@
 					<div class="flex items-center gap-2 text-[#F5F7FA] font-semibold text-[18px] mb-2">
 						{project.name}
 						<a href={project.link} target="_blank" rel="noopener noreferrer">
-							<Icon icon="jam:github" width="24" height="24" class="text-[#1E88E5]" />
+							<Icon icon="jam:github" width="24" height="24" class="text-[#4AB0F7]" />
 						</a>
 					</div>
 
